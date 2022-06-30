@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductsCardComponent implements OnInit {
   @Input()
-  film!: any;
+  media!: any;
 
   constructor() {}
 

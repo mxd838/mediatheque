@@ -1,5 +1,16 @@
 <div>
-  <p>{{ film.nom }}</p>
-  <img src="{{ film.img }}" alt="" />
-  <p>{{ film.synopsis }}</p>
+  <div class="img">
+    <img *ngIf="media.img !== ''" src="{{ media.img }}" alt="{{ media.nom }}" />
+    <img
+      *ngIf="media.img === ''"
+      src="https://pbs.twimg.com/profile_images/821849411991044096/lQFa_Vly_400x400.jpg"
+      alt=""
+    />
+  </div>
+  <div class="infos">
+    <h4>{{ media.nom }}</h4>
+    <p *ngIf="media.real">De {{ media.real }}, {{ media.annee }}</p>
+    <p *ngIf="media.artiste">{{ media.artiste }}, {{ media.annee }}</p>
+    <p>{{ media.synopsis }}</p>
+  </div>
 </div>

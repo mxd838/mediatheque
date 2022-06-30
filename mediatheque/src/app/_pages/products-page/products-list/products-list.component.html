@@ -1,3 +1,9 @@
-<span *ngFor="let film of films">
-  <app-products-card [film]="film"></app-products-card>
-</span>
+<h3>Films</h3>
+<div *ngFor="let film of films">
+  <app-products-card [media]="film"></app-products-card>
+</div>
+
+<h3>Musique</h3>
+<div *ngFor="let album of albums">
+  <app-products-card [media]="album"></app-products-card>
+</div>
