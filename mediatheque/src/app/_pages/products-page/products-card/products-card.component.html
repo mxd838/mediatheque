@@ -11,6 +11,6 @@
     <h4>{{ media.nom }}</h4>
     <p *ngIf="media.real">De {{ media.real }}, {{ media.annee }}</p>
     <p *ngIf="media.artiste">{{ media.artiste }}, {{ media.annee }}</p>
-    <p class="synopsis">{{ media.synopsis }}</p>
+    <p class="synopsis">{{ media.synopsis | slice: 0:100 }}...</p>
   </div>
 </div>
