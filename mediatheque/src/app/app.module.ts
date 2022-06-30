@@ -8,6 +8,8 @@ import { FooterComponent } from './_commons/footer/footer.component';
 import { NotFoundComponent } from './_pages/not-found/not-found.component';
 import { HomePageComponent } from './_pages/home-page/home-page.component';
 import { ProductsPageComponent } from './_pages/products-page/products-page.component';
+import { ProductsCardComponent } from './_pages/products-page/products-card/products-card.component';
+import { ProductsListComponent } from './_pages/products-page/products-list/products-list.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,12 @@ import { ProductsPageComponent } from './_pages/products-page/products-page.comp
     FooterComponent,
     NotFoundComponent,
     HomePageComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    ProductsCardComponent,
+    ProductsListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
