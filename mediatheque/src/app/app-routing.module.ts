@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'products', component: ProductsPageComponent },
-  // toujours mettre à la fin
   { path: '**', component: NotFoundComponent },
 ];
 

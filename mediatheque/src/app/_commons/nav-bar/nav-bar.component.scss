@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(169, 120, 59);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.8em;
+}
+
+a {
+  text-decoration: none;
+}
+
+div > a {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin-left: 0.5em;
+  color: white;
+}
+
+li > a {
+  font-size: 1.5em;
+  color: white;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+li:last-child {
+  margin-right: 1em;
+}

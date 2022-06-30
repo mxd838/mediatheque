@@ -1,4 +1,4 @@
-<div>
+<div class="card">
   <div class="img">
     <img *ngIf="media.img !== ''" src="{{ media.img }}" alt="{{ media.nom }}" />
     <img
@@ -11,6 +11,6 @@
     <h4>{{ media.nom }}</h4>
     <p *ngIf="media.real">De {{ media.real }}, {{ media.annee }}</p>
     <p *ngIf="media.artiste">{{ media.artiste }}, {{ media.annee }}</p>
-    <p>{{ media.synopsis }}</p>
+    <p class="synopsis">{{ media.synopsis }}</p>
   </div>
 </div>

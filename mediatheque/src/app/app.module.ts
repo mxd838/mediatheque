@@ -10,6 +10,7 @@ import { HomePageComponent } from './_pages/home-page/home-page.component';
 import { ProductsPageComponent } from './_pages/products-page/products-page.component';
 import { ProductsCardComponent } from './_pages/products-page/products-card/products-card.component';
 import { ProductsListComponent } from './_pages/products-page/products-list/products-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ProductsListComponent } from './_pages/products-page/products-list/prod
     ProductsCardComponent,
     ProductsListComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
