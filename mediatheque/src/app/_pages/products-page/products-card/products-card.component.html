@@ -3,7 +3,7 @@
     <img *ngIf="media.img !== ''" [src]="media.img" [alt]="media.nom" />
     <img
       *ngIf="media.img === ''"
-      src="https://pbs.twimg.com/profile_images/821849411991044096/lQFa_Vly_400x400.jpg"
+      src="https://www.rd.com/wp-content/uploads/2020/11/GettyImages-889552354-e1606774439626.jpg"
       alt=""
     />
   </div>
@@ -11,6 +11,8 @@
     <h4>{{ media.nom }}</h4>
     <p *ngIf="media.real">De {{ media.real }}, {{ media.annee }}</p>
     <p *ngIf="media.artiste">{{ media.artiste }}, {{ media.annee }}</p>
-    <p class="synopsis">{{ media.synopsis | slice: 0:100 }}...</p>
+    <p class="synopsis" *ngIf="media.synopsis">
+      {{ media.synopsis | slice: 0:100 }}...
+    </p>
   </div>
 </div>
