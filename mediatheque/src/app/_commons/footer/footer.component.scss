@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+}
+
+footer ul {
+  display: flex;
+  margin-left: auto;
+  margin-right: 1.5em;
+  gap: 1.8em;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
